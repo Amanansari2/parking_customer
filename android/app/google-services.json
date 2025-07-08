@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "140850035551",
+    "firebase_url": "https://parkinghawkernew2024-9d60a-default-rtdb.firebaseio.com",
+    "project_id": "parkinghawkernew2024-9d60a",
+    "storage_bucket": "parkinghawkernew2024-9d60a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140850035551:android:7cf03a05c43f3bf24cd4ea",
+        "android_client_info": {
+          "package_name": "com.phawkernew.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140850035551-9ovu2uge4p8oohh8sf401v53hc8g4r7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phawkernew.customer",
+            "certificate_hash": "44cb0e4417f731f4be775715345358de8ec9a36b"
+          }
+        },
+        {
+          "client_id": "140850035551-hmdiihq53g67usmq9lupc5ehd3tchm1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phawkernew.customer",
+            "certificate_hash": "68a8f8b51374d70996a1137b923310a3c3cfecd3"
+          }
+        },
+        {
+          "client_id": "140850035551-31m46knest914rqgfh6rrfc4acuosiro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_q_kmmsw4U3AZDtkt6gbsTDOQPjtqA2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140850035551-31m46knest914rqgfh6rrfc4acuosiro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140850035551:android:5d95458aa9a40ec54cd4ea",
+        "android_client_info": {
+          "package_name": "com.phawkernew.owner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140850035551-2jgmvccu2rme7m628ns3mpe6uobii6n2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phawkernew.owner",
+            "certificate_hash": "7be6008c6ae104c69d1980f327a75e7244efca07"
+          }
+        },
+        {
+          "client_id": "140850035551-un3lgeinjs78l3gtshhdrb0ah3lurk3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phawkernew.owner",
+            "certificate_hash": "44cb0e4417f731f4be775715345358de8ec9a36b"
+          }
+        },
+        {
+          "client_id": "140850035551-31m46knest914rqgfh6rrfc4acuosiro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_q_kmmsw4U3AZDtkt6gbsTDOQPjtqA2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140850035551-31m46knest914rqgfh6rrfc4acuosiro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140850035551:android:294eb4506bedebdd4cd4ea",
+        "android_client_info": {
+          "package_name": "com.phawkernew.watchman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140850035551-31m46knest914rqgfh6rrfc4acuosiro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_q_kmmsw4U3AZDtkt6gbsTDOQPjtqA2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140850035551-31m46knest914rqgfh6rrfc4acuosiro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

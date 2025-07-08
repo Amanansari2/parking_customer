@@ -1,0 +1,30 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "parkinghawkernew2024-9d60a",
+          "appId": "1:140850035551:android:7cf03a05c43f3bf24cd4ea",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "parkinghawkernew2024-9d60a",
+          "appId": "",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "parkinghawkernew2024-9d60a",
+          "configurations": {
+            "android": "1:140850035551:android:7cf03a05c43f3bf24cd4ea",
+            "web": ""
+          }
+        }
+      }
+    }
+  }
+}
