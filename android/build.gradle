@@ -1,23 +1,113 @@
+//buildscript {
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:8.3.0'
+//       classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10"
+//        classpath "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0"
+//    }
+//}
+//
+//allprojects {
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+////    configurations.all {
+////        resolutionStrategy {
+////            force 'org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0' // Force compatible version
+////        }
+////    }
+//}
+//
+//rootProject.buildDir = '../build'
+//subprojects {
+//    project.buildDir = "${rootProject.buildDir}/${project.name}"
+//}
+//subprojects {
+//    project.evaluationDependsOn(':app')
+////    configurations.configureEach{
+////    resolutionStrategy {
+////        force 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+////    }
+////}
+//}
+//
+//tasks.register("clean", Delete) {
+//    delete rootProject.buildDir
+//}
+//subprojects { subproject ->
+//    // Force Kotlin jvmTarget
+//    subproject.plugins.withType(org.jetbrains.kotlin.gradle.plugin.KotlinBasePluginWrapper) {
+//        subproject.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+//            kotlinOptions {
+//                jvmTarget = "17"
+//            }
+//        }
+//    }
+//
+//    // Force Java source/target compatibility safely before it's finalized
+//    subproject.plugins.withId("java") {
+//        subproject.extensions.configure(org.gradle.api.plugins.JavaPluginExtension) {
+//            it.sourceCompatibility = JavaVersion.VERSION_17
+//            it.targetCompatibility = JavaVersion.VERSION_17
+//        }
+//    }
+//}
+
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21"
+    }
+}
+
 allprojects {
     repositories {
         google()
         mavenCentral()
     }
+
+    // Force compatible version of kotlinx-metadata-jvm
+    configurations.all {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlinx:kotlinx-metadata-jvm:2.0.0'  // Force a compatible version
+        }
+    }
 }
 
 rootProject.buildDir = '../build'
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
-    project.evaluationDependsOn(':app')
-    configurations.configureEach{
-    resolutionStrategy {
-        force 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
-    }
-}
 }
 
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
+}
+
+subprojects { subproject ->
+    // Force Kotlin jvmTarget to 17
+    subproject.plugins.withType(org.jetbrains.kotlin.gradle.plugin.KotlinBasePluginWrapper) {
+        subproject.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+            kotlinOptions {
+                jvmTarget = "17"
+            }
+        }
+    }
+
+    // Force Java source/target compatibility safely before it's finalized
+    subproject.plugins.withId("java") {
+        subproject.extensions.configure(org.gradle.api.plugins.JavaPluginExtension) {
+            it.sourceCompatibility = JavaVersion.VERSION_17
+            it.targetCompatibility = JavaVersion.VERSION_17
+        }
+    }
 }

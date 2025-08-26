@@ -103,8 +103,10 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name="com.paypal.openid.RedirectUriReceiverActivity" />
+      <!--
+      <activity android:name="com.paypal.openid.RedirectUriReceiverActivity" />
         <activity android:name="com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity" />
+        -->
 
     </application>
 </manifest>

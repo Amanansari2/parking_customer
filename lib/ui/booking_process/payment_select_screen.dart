@@ -244,13 +244,15 @@ class PaymentSelectScreen extends StatelessWidget {
                                     .calculateAmount()
                                     .toStringAsFixed(Constant
                                         .currencyModel!.decimalDigits!));
-                          } else if (controller.selectedPaymentMethod.value ==
-                              controller.paymentModel.value.paypal!.name) {
-                            controller.paypalPaymentSheet(controller
-                                .calculateAmount()
-                                .toStringAsFixed(
-                                    Constant.currencyModel!.decimalDigits!));
-                          } else if (controller.selectedPaymentMethod.value ==
+                          }
+                          // else if (controller.selectedPaymentMethod.value ==
+                          //     controller.paymentModel.value.paypal!.name) {
+                          //   controller.paypalPaymentSheet(controller
+                          //       .calculateAmount()
+                          //       .toStringAsFixed(
+                          //           Constant.currencyModel!.decimalDigits!));
+                          // }
+                          else if (controller.selectedPaymentMethod.value ==
                               controller.paymentModel.value.payStack!.name) {
                             controller.payStackPayment(controller
                                 .calculateAmount()
